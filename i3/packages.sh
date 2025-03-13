@@ -29,9 +29,9 @@ file_managers=("thunar" "pcmanfm" "nautilus" "dolphin" "ranger" "lf")
 archive_tools=("xarchiver" "unrar" "7zip")
 text_editors=("geany" "kate" "gedit" "l3afpad" "mousepad" "pluma" "neovim")
 audio_server=("pulseaudio" "pipewire")
-multimedia=("mpv" "mpv-mpris" "ffmpeg" "qimgv" "vlc" "audacity" "pavucontrol" "pamixer" "kdenlive" "gimp" "obs-studio" "rhythmbox" "cmus" "mpd" "ncmpcpp" "mkvtoolnix-gui")
+multimedia=("mpv" "mpv-mpris" "ffmpeg" "qimgv" "vlc" "audacity" "pavucontrol" "pamixer" "kdenlive" "gimp" "obs-studio" "rhythmbox" "cmus" "mpd" "ncmpcpp" "playerctl" "mkvtoolnix-gui")
 app_launchers=("rofi" "dmenu")
-utilities=("feh" "gparted" "gnome-disk-utility" "gsmartcontrol" "fastfetch" "nitrogen" "flameshot" "numlockx" "galculator" "cpu-x" "curl" "whois" "tree" "btop" "htop" "bat" "light" "brightnessctl" "redshift")
+utilities=("feh" "gparted" "gnome-disk-utility" "gsmartcontrol" "fastfetch" "nitrogen" "flameshot" "numlockx" "galculator" "cpu-x" "curl" "whois" "tree" "btop" "htop" "bat" "light" "brightnessctl" "redshift" "sxhkd")
 gtk_qt_theming=("lxappearance" "qt5ct")
 unixporn=("fortunes" "cowsay" "lolcat" "cava")
 
@@ -40,6 +40,7 @@ declare -A dependencies
 dependencies=(
     ["thunar"]="thunar-volman thunar-archive-plugin"
     ["gimp"]="gtk2-engines-murrine gtk2-engines-pixbuf"
+    ["mpd"]="mpdris2 mpc"
 )
 
 # Initialize an array to hold selected packages for installation

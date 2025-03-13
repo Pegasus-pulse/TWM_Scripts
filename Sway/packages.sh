@@ -29,7 +29,7 @@ file_managers=("thunar" "pcmanfm" "nautilus" "dolphin" "ranger" "lf")
 archive_tools=("xarchiver" "unrar" "7zip")
 text_editors=("geany" "kate" "gedit" "l3afpad" "mousepad" "pluma" "neovim")
 audio_server=("pulseaudio" "pipewire")
-multimedia=("mpv" "mpv-mpris" "ffmpeg" "qimgv" "vlc" "audacity" "pavucontrol" "pamixer" "kdenlive" "gimp" "obs-studio" "rhythmbox" "cmus" "mpd" "ncmpcpp" "mkvtoolnix-gui")
+multimedia=("mpv" "mpv-mpris" "ffmpeg" "qimgv" "vlc" "audacity" "pavucontrol" "pamixer" "kdenlive" "gimp" "obs-studio" "rhythmbox" "cmus" "mpd" "ncmpcpp" "playerctl" "mkvtoolnix-gui")
 app_launchers=("tofi" "wofi" "bemenu" "fuzzel")
 utilities=("gparted" "gnome-disk-utility" "gsmartcontrol" "fastfetch" "nitrogen" "flameshot" "grim" "numlockx" "galculator" "cpu-x" "curl" "whois" "tree" "btop" "htop" "bat" "light" "brightnessctl" "gammastep")
 gtk_qt_theming=("nwg-look" "qt5ct")
@@ -41,6 +41,7 @@ dependencies=(
     ["thunar"]="thunar-volman thunar-archive-plugin"
     ["gimp"]="gtk2-engines-murrine gtk2-engines-pixbuf"
     ["grim"]="slurp"
+    ["mpd"]="mpdris2 mpc"
 )
 
 # Initialize an array to hold selected packages for installation
