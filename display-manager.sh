@@ -96,9 +96,21 @@ install_greetd() {
     echo "Installing greetd..."
     sudo apt update
     sudo apt install -y greetd tuigreet xinit
+
+    echo "Configuring greetd..."
+    FILE_PATH="/etc/greetd/config.toml"
+    NEW_COMMAND='command = "tuigreet --remember --power-shutdown '\''shutdown -h now'\'' --power-reboot '\''shutdown -r now'\'' --cmd startx --time --time-format '\''%a, %b %d - %H:%M'\'' --greeting '\''Welcome Back, Buddy'\'' --window-padding 3 --asterisks"'
+
+    if sudo grep -q "^command = " "$FILE_PATH"; then
+        sudo sed -i "s|^command = .*|$NEW_COMMAND|" "$FILE_PATH"
+    else
+        echo "$NEW_COMMAND" | sudo tee -a "$FILE_PATH" > /dev/null
+    fi
+
     sudo systemctl enable greetd
     echo -e "${green}greetd has been installed and enabled.${reset}\n"
 }
+
 
 prompt_user() {
     while true; do
