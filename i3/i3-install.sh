@@ -49,13 +49,13 @@ while IFS= read -r package || [ -n "$package" ]; do
     fi
 done < "$HOME/pulse_scripts/common_packages.txt"
 
-sudo bash ~/pulse_scripts/i3/packages.sh
+bash ~/pulse_scripts/i3/packages.sh
 clear
 
-sudo bash ~/pulse_scripts/browsers.sh
+bash ~/pulse_scripts/browsers.sh
 clear
 
-sudo bash ~/pulse_scripts/display-manager.sh
+bash ~/pulse_scripts/display-manager.sh
 clear
 
 sudo apt autoremove

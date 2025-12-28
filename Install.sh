@@ -31,7 +31,7 @@ if ! command -v git &> /dev/null; then
     echo -e "${red}git is not installed. Installing git...${reset}\n"
     sudo apt-get install -y git
 else
-    echo -e "${yellow}git is already installed.${reser}\n"
+    echo -e "${yellow}git is already installed.${reset}\n"
 fi
 
 git clone https://github.com/pegasus-pulse/TWM_Scripts.git "$HOME/pulse_scripts"
@@ -45,11 +45,11 @@ mkdir ~/Screenshots
 git clone https://github.com/pegasus-pulse/Debian_Scripts.git "$HOME/pulse_scripts/extra"
 
 install_i3() {
-    sudo bash ~/pulse_scripts/i3/i3-install.sh
+    bash ~/pulse_scripts/i3/i3-install.sh
 }
 
 install_sway() {
-    sudo bash ~/pulse_scripts/Sway/sway-install.sh
+    bash ~/pulse_scripts/Sway/sway-install.sh
 }
 
 echo -e "${green} =========================================================================="
