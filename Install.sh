@@ -42,7 +42,7 @@ xdg-user-dirs-update
 mkdir ~/Screenshots
 
 # Download OPTIONAL Scripts
-git clone https://github.com/pegasus-pulse/Debian_Scripts.git "$HOME/Documents/Scripts
+git clone https://github.com/pegasus-pulse/Debian_Scripts.git "$HOME/Documents/Scripts"
 
 install_i3() {
     sudo bash ~/pulse_scripts/i3/i3-install.sh

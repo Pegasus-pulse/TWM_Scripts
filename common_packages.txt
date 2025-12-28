@@ -9,6 +9,7 @@ meson
 ninja-build
 clipman
 xclip
+diodon
 curl
 wget
 gettext
@@ -19,7 +20,6 @@ libxkbcommon-dev
 dialog
 gvfs-backends
 network-manager
-network-manager-applet
 zip
 unzip
 papirus-icon-theme

@@ -1,8 +1,8 @@
 # i3/Sway Installation Script
 
-**Updated: April 14, 2025**
+**Updated: December 28, 2025**
 
-This repository contains Bash scripts for installing the i3 or Sway window manager on Debian 12 (Bookworm) or Sid (Unstable) systems.
+This repository contains Bash scripts for installing the i3 or Sway window managers on Debian 13 (Trixie) or Sid (Unstable) systems.
 
 ###### Note: A minimal install is recommended.
 
@@ -11,12 +11,12 @@ This repository contains Bash scripts for installing the i3 or Sway window manag
 - Easy installation of i3 or Sway
 - Select additional packages to install
 - Option to install a user-preferred display manager
-- Designed specifically for Debian 12 and Sid
 
 ## Prerequisites
 
-- A Debian 12 (Bookworm) or Sid (Unstable) Linux distribution
+- A Debian 13 (Trixie) or Sid (Unstable) Linux distribution
 - Bash shell
+- wget
 - Internet connection
 
 ## Installation
@@ -42,7 +42,7 @@ This repository contains Bash scripts for installing the i3 or Sway window manag
 * discord.sh: Install/update/remove Discord from binary files.
 * nerdfonts-installer.sh: Install your preferred Nerd Fonts.
 * betterlockscreen.sh: Installs the Betterlockscreen lockscreen package.
-* lydm.sh: Can be used to update the Ly Display Manager if you installed it.
+* lydm.sh: Can be used to update the Ly Display Manager if you have installed it.
 
 ## Usage
 
