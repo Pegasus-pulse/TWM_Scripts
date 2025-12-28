@@ -19,22 +19,12 @@ This repository contains Bash scripts for installing the i3 or Sway window manag
 - wget
 - Internet connection
 
-## Installation
+<hr>
+<br>
 
-1. Download the script:
-   ```bash
-   wget https://raw.githubusercontent.com/pegasus-pulse/TWM_Scripts/main/install.sh
-   ```
-
-2. Make the script executable:
-   ```bash
-   chmod +x install.sh
-   ```
-3. Run the script:
-   ```bash
-   ./install.sh
-   ```
-4. Follow the prompts to select your desired window manager, additional packages, and display manager.
+```bash
+bash -c "$(curl -L https://github.com/Pegasus-pulse/TWM_Scripts/raw/master/Install.sh)"
+```
 
 #### Other Scripts Included:
 * picom.sh: Install/update/remove picom-git or picom (apt).
